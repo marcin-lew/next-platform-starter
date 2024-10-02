@@ -36,4 +36,4 @@ const Katalog = () => {
   );
 };
 
-export default Katalog;
+export default Katalog; 
