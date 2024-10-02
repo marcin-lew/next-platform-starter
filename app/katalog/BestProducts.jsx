@@ -11,7 +11,7 @@ const BestProducts = () => {
           <img
             src={products[0].imageUrl}
             alt="Piana Soudal Classic 750 ml"
-            className="w-3/4 md:w-full h-auto object-contain" // Na mobile zajmuje 75%, na desktop 100% szerokości kontenera
+            className="w-3/4 md:w-full h-auto object-contain" // Zdjęcie zajmuje 75% szerokości na mobile
           />
         </div>
         <div className="col-span-2 md:pl-6">
@@ -22,7 +22,7 @@ const BestProducts = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
               <h4 className="font-semibold mb-2">Wyróżniki:</h4>
-              <ul className="list-disc list-inside text-gray-800">
+              <ul className="list-disc list-inside text-gray-800"> {/* Zmieniony kolor tekstu */}
                 <li>Wydajność: do 60 litrów</li>
                 <li>Czas schnięcia: 30 minut dla warstwy 3 cm</li>
                 <li>Rozprężność: niska</li>
@@ -33,8 +33,8 @@ const BestProducts = () => {
             </div>
             <div>
               <h4 className="font-semibold mb-2">Cennik:</h4>
-              <table className="min-w-full bg-white">
-                <thead className="bg-gray-200 text-gray-800">
+              <table className="min-w-full bg-white border border-gray-200"> {/* Poprawiony układ tabeli */}
+                <thead className="bg-gray-300 text-gray-800"> {/* Zmieniony kolor tła i tekstu */}
                   <tr>
                     <th className="text-left p-2">Ilość</th>
                     <th className="text-right p-2">Cena netto/szt.</th>
@@ -43,19 +43,19 @@ const BestProducts = () => {
                 </thead>
                 <tbody>
                   <tr>
-                    <td className="text-left p-2">1 sztuka</td>
-                    <td className="text-right p-2">18,69 zł</td>
-                    <td className="text-right p-2">22,99 zł</td>
+                    <td className="text-left p-2 text-gray-800">1 sztuka</td> {/* Zmieniony kolor tekstu */}
+                    <td className="text-right p-2 text-gray-800">18,69 zł</td>
+                    <td className="text-right p-2 text-gray-800">22,99 zł</td>
                   </tr>
                   <tr>
-                    <td className="text-left p-2">2 kartony</td>
-                    <td className="text-right p-2">-</td>
-                    <td className="text-right p-2">22,64 zł</td>
+                    <td className="text-left p-2 text-gray-800">2 kartony</td>
+                    <td className="text-right p-2 text-gray-800">-</td>
+                    <td className="text-right p-2 text-gray-800">22,64 zł</td>
                   </tr>
                   <tr>
-                    <td className="text-left p-2">5 kartonów</td>
-                    <td className="text-right p-2">-</td>
-                    <td className="text-right p-2">22,41 zł</td>
+                    <td className="text-left p-2 text-gray-800">5 kartonów</td>
+                    <td className="text-right p-2 text-gray-800">-</td>
+                    <td className="text-right p-2 text-gray-800">22,41 zł</td>
                   </tr>
                 </tbody>
               </table>
