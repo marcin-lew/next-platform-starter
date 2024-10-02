@@ -6,15 +6,15 @@ const BestProducts = () => {
       <h2 className="text-3xl font-bold mb-6">Najlepsze produkty dla Ciebie</h2>
 
       {/* Sekcja dla pianki Soudal Classic */}
-      <div className="flex flex-col md:flex-row bg-white shadow-md p-6 mb-8">
-        <div className="md:w-1/3">
+      <div className="grid grid-cols-1 md:grid-cols-3 bg-white shadow-md p-6 mb-8">
+        <div className="flex justify-center md:block">
           <img
             src={products[0].imageUrl}
             alt="Piana Soudal Classic 750 ml"
-            className="w-32 h-32 object-contain mb-4" // Zmieniono rozmiar obrazka
+            className="w-3/4 md:w-full h-auto object-contain" // Na mobile zajmuje 75%, na desktop 100% szerokości kontenera
           />
         </div>
-        <div className="md:w-2/3 md:pl-6">
+        <div className="col-span-2 md:pl-6">
           <h3 className="text-2xl font-bold mb-2">Piana Soudal Classic 750 ml</h3>
           <p className="mb-4 text-gray-600">
             Wydajność i szybkość, których potrzebujesz. Do 60 litrów pianki, gotowej do dalszej obróbki w mgnieniu oka.
@@ -22,7 +22,7 @@ const BestProducts = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
               <h4 className="font-semibold mb-2">Wyróżniki:</h4>
-              <ul className="list-disc list-inside text-gray-800"> {/* Zmiana koloru tekstu */}
+              <ul className="list-disc list-inside text-gray-800">
                 <li>Wydajność: do 60 litrów</li>
                 <li>Czas schnięcia: 30 minut dla warstwy 3 cm</li>
                 <li>Rozprężność: niska</li>
